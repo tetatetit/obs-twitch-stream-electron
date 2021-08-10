@@ -1,0 +1,22 @@
+{
+  "name": "obs-twitch-stream-electron",
+  "version": "0.1.1",
+  "description": "Simple Electron app that calling single function from the node native module that start streaming to Twitchusing libobs",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/tetatetit/obs-twitch-stream-electron.git"
+  },
+  "author": "Serhiy Berezin",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^13.1.8"
+  },
+  "dependencies": {
+    "@berezins/obs-twitch-stream-node": "^0.1.3",
+    "@berezins/obs-studio-node": "^0.3.99"
+  }
+}
