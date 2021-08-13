@@ -1,13 +1,14 @@
 const { app, BrowserWindow } = require('electron')
+const path = require('path')
+
 
 app.whenReady().then(() => {
     const win = new BrowserWindow({
         width: 800,
-        height: 600
+        height: 600,
+        webPreferences: {
+            preload: path.join(__dirname, 'preload.js')
+        }
     })
     win.loadFile('index.html')
-
-    require('c:/Program Files/obs-twitch-stream-node/obs_twitch_stream_node.node')
-        .obsBroadcast()
-
 })
